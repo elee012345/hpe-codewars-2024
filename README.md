@@ -1,0 +1,1 @@
+the only actuallhy solved problems are 20, 15, 13, 12, 6, 5, 4, 3, 2, 1

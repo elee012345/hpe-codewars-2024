@@ -1,0 +1,35 @@
+def getInput():
+    output = []
+    while True:
+        try:
+            stuff = input()
+            output.append(stuff)
+        except:
+            break
+    return output
+
+
+stringRect = getInput()
+final = ""
+for line in stringRect:
+    if line == stringRect[0] or line == stringRect[-1]:
+        final += str(["#"] * len(line)) + "\n"
+        continue
+    newLine = [' '] * len(line)
+    newLine[0] = "#"
+    newLine[-1] = "#"
+    final += str(newLine) + "\n"
+if stringRect == final:
+    print("Nothing to do.")
+else:
+    # a = final.split("\n")
+    # b = [i[1, -1] for i in a].split(", ")
+    # c = [j[1] for j in [i for i in b]]
+    # print(c)
+    pass
+    
+# height = len(stuff)
+# width = len(stuff[0])
+# result = []
+# for i in range(height):
+#     if i == 0 or i == height - 1:
